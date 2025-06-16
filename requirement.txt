@@ -1,0 +1,10 @@
+# 보안
+bcrypt
+
+# API 통신
+requests
+
+# 데이터 분석 및 머신러닝
+scikit-learn
+joblib
+pandas
