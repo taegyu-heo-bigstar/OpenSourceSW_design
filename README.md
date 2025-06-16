@@ -92,6 +92,7 @@ Python 버전 (Python Version)
 6. 프로그램 실행   
 
 모든 준비가 끝났다면, 아래 명령어로 프로그램을 실행합니다.   
+초기 관리자용 id와 pw는 모두 admin 입니다.
 ```
    python main.py
 ```   
