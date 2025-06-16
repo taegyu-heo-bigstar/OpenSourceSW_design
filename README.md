@@ -76,9 +76,18 @@ Python 버전 (Python Version)
 아래 명령어를 사용하여 requirements.txt 파일에 명시된 모든 라이브러리를 한 번에 설치합니다.   
 ```
   pip install -r requirements.txt
-```  
-4. 프로그램 실행   
-모든 라이브러리가 설치되었다면, 아래 명령어로 프로그램을 실행합니다.   
+```
+4. 필요 api   
+공공 데이터 포털의 회원가입 후 로그인하여 "기상청_단기예보 ((구)_동네예보) 조회서비스" 서비스의 api key를 획득해야 합니다.   
+얻은 api key를 lib/interface.py에 입력해야 합니다.   
+22번째 줄을 보게되면 다음과 같은 부분이 있습니다.   
+```
+   KMA_API_KEY = "여기에 api key가 필요" 
+```
+해당 부분에 ' 혹은 "로 감싼 api key를 입력하십시오. 권장되는 api_key는 decoding된 key입니다.
+
+6. 프로그램 실행   
+모든 준비가 끝났다면, 아래 명령어로 프로그램을 실행합니다.   
 ```
    python main.py
 ```   
