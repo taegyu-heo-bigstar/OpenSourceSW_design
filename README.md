@@ -57,7 +57,8 @@ Python 버전 (Python Version)
   git clone [프로젝트의 Git 저장소 URL]   
   cd [프로젝트 폴더명]   
 ```
-3. 가상 환경 생성 및 활성화    
+3. 가상 환경 생성 및 활성화
+
 #가상 환경 생성 (최초 1회)   
 ```
   python -m venv venv
