@@ -83,7 +83,7 @@ Python 버전 (Python Version)
 ```
    python main.py
 ```   
-##📂 프로젝트 구조   
+## 📂 프로젝트 구조   
 Inventory-Management-System/   
 ├── lib/                      # 핵심 로직 및 UI 정의 패키지   
 │   ├── __init__.py           # lib 폴더를 패키지로 인식시킴   
