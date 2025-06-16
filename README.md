@@ -25,19 +25,19 @@ GUI: Tkinter (파이썬 기본 내장)
 데이터베이스: SQLite 3 (파이썬 기본 내장)   
 
 ### 요구 사항   
-> #### 하드웨어적 요구사항   
+  ### 하드웨어적 요구사항   
 
 #### 최소 사양   
-*CPU: 1.5 GHz 이상의 듀얼 코어 프로세서   
-*RAM: 4 GB   
-*저장 공간: 2 GB 이상의 여유 공간   
+> CPU: 1.5 GHz 이상의 듀얼 코어 프로세서   
+> RAM: 4 GB   
+> 저장 공간: 2 GB 이상의 여유 공간   
 
 #### 권장 사양   
-* CPU: 2.0 GHz 이상의 쿼드 코어 프로세서   
-* RAM: 8 GB 이상   
-* 저장 공간: 5 GB 이상의 여유 공간 (SSD 권장)   
+> CPU: 2.0 GHz 이상의 쿼드 코어 프로세서   
+> RAM: 8 GB 이상   
+> 저장 공간: 5 GB 이상의 여유 공간 (SSD 권장)   
 
-> #### 소프트웨어 요구사항   
+  ### 소프트웨어 요구사항   
 
 운영체제 (Operating System)   
 > Windows 10 또는 그 이상   
@@ -51,49 +51,49 @@ Python 버전 (Python Version)
 필수 라이브러리 (Required Libraries)   
 >프로젝트의 requirements.txt 파일에 명시된 모든 라이브러리.   
 
-## 🚀 설치 및 실행 방법
-1. 프로젝트 복제 (Clone)
-터미널을 열고 아래 명령어를 입력하여 프로젝트를 복제합니다.
+## 🚀 설치 및 실행 방법   
+1. 프로젝트 복제 (Clone)   
+터미널을 열고 아래 명령어를 입력하여 프로젝트를 복제합니다.   
+
+Bash   
+
+git clone [프로젝트의 Git 저장소 URL]   
+cd [프로젝트 폴더명]   
+2. 가상 환경 생성 및 활성화   
+프로젝트별로 독립된 개발 환경을 구성하기 위해 가상 환경 사용을 강력히 권장합니다.   
+
+Bash   
+
+## 가상 환경 생성 (최초 1회)   
+  python -m venv venv
+
+## 가상 환경 활성화 (실행할 때마다 필요)   
+# Windows:   
+  venv\Scripts\activate
+# macOS / Linux:   
+  source venv/bin/activate
+3. 필수 라이브러리 설치   
+아래 명령어를 사용하여 requirements.txt 파일에 명시된 모든 라이브러리를 한 번에 설치합니다.   
 
 Bash
-
-git clone [프로젝트의 Git 저장소 URL]
-cd [프로젝트 폴더명]
-2. 가상 환경 생성 및 활성화
-프로젝트별로 독립된 개발 환경을 구성하기 위해 가상 환경 사용을 강력히 권장합니다.
-
+  pip install -r requirements.txt
+  4. 프로그램 실행
+  모든 라이브러리가 설치되었다면, 아래 명령어로 프로그램을 실행합니다.
 Bash
 
-# 가상 환경 생성 (최초 1회)
-python -m venv venv
+##python main.py   
+##📂 프로젝트 구조   
+Inventory-Management-System/   
+├── lib/                      # 핵심 로직 및 UI 정의 패키지   
+│   ├── __init__.py           # lib 폴더를 패키지로 인식시킴   
+│   ├── interface.py          # GUI 및 애플리케이션 흐름 제어   
+│   ├── account_management.py # 계정 관련 데이터베이스 로직   
+│   └── inventory.py          # 재고 관련 데이터베이스 로직   
+├── venv/                     # 가상 환경 폴더   
+├── main.py                   # 프로그램 실행 파일 (Entry Point)   
+├── requirements.txt          # 외부 라이브러리 목록   
+└── README.md                 # 프로젝트 소개 및 안내 문서   
 
-# 가상 환경 활성화 (실행할 때마다 필요)
-# Windows:
-venv\Scripts\activate
-# macOS / Linux:
-source venv/bin/activate
-3. 필수 라이브러리 설치
-아래 명령어를 사용하여 requirements.txt 파일에 명시된 모든 라이브러리를 한 번에 설치합니다.
-
-Bash
-
-pip install -r requirements.txt
-4. 프로그램 실행
-모든 라이브러리가 설치되었다면, 아래 명령어로 프로그램을 실행합니다.
-
-Bash
-
-python main.py
-📂 프로젝트 구조
-Inventory-Management-System/
-├── lib/                      # 핵심 로직 및 UI 정의 패키지
-│   ├── __init__.py           # lib 폴더를 패키지로 인식시킴
-│   ├── interface.py          # GUI 및 애플리케이션 흐름 제어
-│   ├── account_management.py # 계정 관련 데이터베이스 로직
-│   └── inventory.py          # 재고 관련 데이터베이스 로직
-├── venv/                     # 가상 환경 폴더
-├── main.py                   # 프로그램 실행 파일 (Entry Point)
-├── requirements.txt          # 외부 라이브러리 목록
-└── README.md                 # 프로젝트 소개 및 안내 문서
+* * *
 🧑‍💻 작성자
 taegyu-heo
