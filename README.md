@@ -53,10 +53,10 @@ Python 버전 (Python Version)
 ## 🚀 설치 및 실행 방법   
 1. 프로젝트 복제 (Clone)   
 터미널을 열고 아래 명령어를 입력하여 프로젝트를 복제합니다.
-
+```
   git clone [프로젝트의 Git 저장소 URL]   
   cd [프로젝트 폴더명]   
-
+```
 3. 가상 환경 생성 및 활성화   
 프로젝트별로 독립된 개발 환경을 구성하기 위해 가상 환경 사용을 강력히 권장합니다.   
 
@@ -66,22 +66,23 @@ Python 버전 (Python Version)
 ```
 #가상 환경 활성화 (실행할 때마다 필요)   
 #Windows:
-
+```
   venv\Scripts\activate
-  
+``` 
 #macOS / Linux:   
-
+```
   source venv/bin/activate
-  
+```  
 3. 필수 라이브러리 설치   
 아래 명령어를 사용하여 requirements.txt 파일에 명시된 모든 라이브러리를 한 번에 설치합니다.   
-
+```
   pip install -r requirements.txt
-  
+```  
 4. 프로그램 실행   
 모든 라이브러리가 설치되었다면, 아래 명령어로 프로그램을 실행합니다.   
-
-##python main.py   
+```
+   python main.py
+```   
 ##📂 프로젝트 구조   
 Inventory-Management-System/   
 ├── lib/                      # 핵심 로직 및 UI 정의 패키지   
