@@ -18,7 +18,7 @@ from Analyze import load_model_and_columns, predict_demand
 from timer import Timer
 
 # --- 1. 설정 부분 ---
-KMA_API_KEY = "Vn8Mt0uwQyePj3F4ZccZBR8ZznVSXU+WHEK/MhEnUnUdo70US6DkwzH6Bmk+9ee9JxC2leNmoegkjfhugyccbw==" 
+KMA_API_KEY = "여기에 api key가 필요" 
 CITY_COORDINATES = {
     "서울": {"lat": 37.5665, "lon": 126.9780},
     "대구": {"lat": 35.8714, "lon": 128.6014}
@@ -433,14 +433,3 @@ class MailboxUI:
                 self.refresh_mailbox()
             except Exception as e: messagebox.showerror("전송 실패", str(e), parent=popup)
         tk.Button(popup, text="보내기", command=on_send).grid(row=2, columnspan=2, pady=10)
-
-
-if __name__ == "__main__":
-    try:
-        import joblib, sklearn, pandas, bcrypt
-    except ImportError:
-        print("="*50 + "\n필수 라이브러리가 설치되지 않았습니다.\n터미널에 아래 명령어를 입력하여 설치해주세요.\npip install pandas scikit-learn joblib bcrypt\n" + "="*50)
-        exit()
-    root = tk.Tk()
-    app = MainApp(root)
-    root.mainloop()
